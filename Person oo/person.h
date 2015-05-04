@@ -10,12 +10,19 @@
 #define Person_oo_person_h
 
 @interface Person: NSObject {
-    NSString* firstname;
-    NSString* lastname;
+    NSString* firstName;
+    NSString* lastName;
+    
+    
 }
 -(id)init;
 -(id)init: (NSString*) fname label:(NSString*) lname;
 -(void) Print;
+-(void) setLastName: (NSString*) lname;
+-(NSString*) firstName;
+-(void) setFirstName: (NSString*) fname;
+-(NSString*) lastName;
+
 
 
 
